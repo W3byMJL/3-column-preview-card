@@ -1,0 +1,168 @@
+html {
+
+}
+
+body {
+    background-color: darkgray;
+    
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 24px;
+    font-size: 13px;
+    font-weight: 200;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1 {
+    color: hsl(0,0%,95%);
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.pcontainer {
+    height: auto;
+    padding-left: 0px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 0px;
+    margin-right: 0px;   
+}
+
+
+
+.card {
+height: auto;
+padding: 0px;
+padding-right: 0px;
+text-align: left;
+
+}
+
+
+.card1 {
+background-color: hsl(31,77%,52%);
+border-radius: 10px 10px 0px 0px;
+}
+
+.card2 {
+background-color: hsl(184, 100%, 22%);
+}
+
+.card3 {
+background-color: hsl(179,100%,13%);
+border-radius: 0px 0px 10px 10px;
+}
+
+.button {
+    background-color: hsl(0,0%,95%);
+    border: 2px solid hsl(0,0%,95%);
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    height: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 20px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    
+}
+
+.button1 {
+    color: hsl(31,77%,52%);;
+}
+
+.button1:hover {
+    background-color: hsl(31,77%,52%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.button2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.button2:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.button3 {
+    color: hsl(179,100%,13%);
+}
+
+.button3:hover {
+    background-color: hsl(179,100%,13%);
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+[class*="size"] {
+    width: 300px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+@media only screen and (min-width: 950px) {
+    [class*="size"] {
+        width: 282px;
+        padding: 50px;
+        float: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .row {
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+          
+        }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+    .card {
+        
+        height: auto;
+        padding-right: 0px;
+        text-align: left;
+        }
+
+    .card1 {
+        border-radius: 10px 0px 0px 10px;
+        }
+
+        .card3 {
+            border-radius: 0px 10px 10px 0px;
+        }
+
+   
+}
